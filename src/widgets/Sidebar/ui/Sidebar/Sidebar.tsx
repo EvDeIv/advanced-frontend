@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import cls from './Sidebar.module.scss';
 import { classNames } from 'shared/lib/classNames';
-import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
 import { ThemeSwitcher } from 'widgets/ThemeSwitcher';
 import { Button } from 'shared/ui/Button/Button';
+import { LngSwitcher } from 'widgets/LngSwitcher';
 
 interface SidebarProps {
 	className?: string;
@@ -24,6 +24,7 @@ export const Sidebar = ({ className }: SidebarProps) => {
 			<Button onClick={onToggle}>Toggle</Button>
 			<div className={cls.switchers}>
 				<ThemeSwitcher />
+				<LngSwitcher />
 			</div>
 		</div>
 	);
