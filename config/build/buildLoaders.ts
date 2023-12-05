@@ -1,6 +1,5 @@
 import webpack from 'webpack';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import ReactRefreshTypeScript from '@pmmmwh/react-refresh-webpack-plugin';
 
 import { BuildOptions } from './types/config';
 
@@ -9,17 +8,7 @@ export function buildLoaders(
 ): webpack.RuleSetRule[] {
     const tsLoader = {
         test: /\.tsx?$/,
-        use: [
-            {
-                loader: require.resolve('ts-loader'),
-                options: {
-                    getCustomTransformers: () => ({
-                        before: [isDev && new ReactRefreshTypeScript()].filter(Boolean),
-                    }),
-                    transpileOnly: isDev,
-                },
-            },
-        ],
+        use: 'ts-loader',
         exclude: /node_modules/,
     };
 
@@ -30,7 +19,10 @@ export function buildLoaders(
         exclude: /node_modules/,
         use: {
             loader: 'babel-loader',
-            options: { presets: ['@babel/preset-env'] },
+            options: {
+                presets: ['@babel/preset-env'],
+                plugins: [isDev && require.resolve('react-refresh/babel')].filter(Boolean),
+            },
         },
     };
 

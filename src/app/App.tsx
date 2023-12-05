@@ -2,9 +2,10 @@ import './styles/index.scss';
 
 import { classNames } from 'shared/lib/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
-import { Navbar } from 'widgets/NavBar';
 import { Sidebar } from 'widgets/Sidebar';
 import { Suspense } from 'react';
+import { Navbar } from 'widgets/NavBar';
+
 import { AppRouter } from './providers/router';
 
 const App = () => {
