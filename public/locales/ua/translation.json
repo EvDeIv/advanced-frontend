@@ -2,5 +2,6 @@
   "translate": "Перекладсти",
   "main": "Головна",
   "about": "Про нас",
-  "language": "Мова"
+  "language": "Мова",
+  "notFoundPage": "Сторінка не знайдена"
 }
