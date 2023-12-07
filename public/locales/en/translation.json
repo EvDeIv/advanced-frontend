@@ -3,5 +3,7 @@
   "main": "Main",
   "about": "About",
   "language": "Language",
-  "notFoundPage": "Page not found"
+  "notFoundPage": "Page not found",
+  "errorBoundaryText": "Something went wrong.",
+  "errorBoundaryButton": "Reload page"
 }

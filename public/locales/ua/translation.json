@@ -3,5 +3,7 @@
   "main": "Головна",
   "about": "Про нас",
   "language": "Мова",
-  "notFoundPage": "Сторінка не знайдена"
+  "notFoundPage": "Сторінка не знайдена",
+  "errorBoundaryText": "Щось пішло не так.",
+  "errorBoundaryButton": "Оновити сторінку"
 }
