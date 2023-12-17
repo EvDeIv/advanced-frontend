@@ -5,5 +5,6 @@
   "language": "Language",
   "notFoundPage": "Page not found",
   "errorBoundaryText": "Something went wrong.",
-  "errorBoundaryButton": "Reload page"
+  "errorBoundaryButton": "Reload page",
+  "toggle": "Toggle"
 }
