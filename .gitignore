@@ -2,3 +2,5 @@ node_modules
 /build
 .idea
 /storybook-static
+report.html
+report.json

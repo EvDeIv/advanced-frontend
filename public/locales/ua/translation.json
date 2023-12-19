@@ -6,5 +6,6 @@
   "notFoundPage": "Сторінка не знайдена",
   "errorBoundaryText": "Щось пішло не так.",
   "errorBoundaryButton": "Оновити сторінку",
-  "toggle": "Перемкнути"
+  "toggle": "Перемкнути",
+  "shortLng": "UA"
 }
